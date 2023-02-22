@@ -431,16 +431,16 @@ Collecting snscrape
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/69.2 KB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">69.2/69.2 KB</span> <span class=" -Color -Color-Red">2.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hRequirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-packages (from snscrape) (4.6.3)
-Requirement already satisfied: requests[socks] in /usr/local/lib/python3.8/dist-packages (from snscrape) (2.25.1)
-Requirement already satisfied: lxml in /usr/local/lib/python3.8/dist-packages (from snscrape) (4.9.2)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">69.2/69.2 KB</span> <span class=" -Color -Color-Red">3.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hRequirement already satisfied: lxml in /usr/local/lib/python3.8/dist-packages (from snscrape) (4.9.2)
 Requirement already satisfied: pytz in /usr/local/lib/python3.8/dist-packages (from snscrape) (2022.7.1)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-packages (from snscrape) (4.6.3)
 Requirement already satisfied: filelock in /usr/local/lib/python3.8/dist-packages (from snscrape) (3.9.0)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests[socks]-&gt;snscrape) (1.24.3)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
+Requirement already satisfied: requests[socks] in /usr/local/lib/python3.8/dist-packages (from snscrape) (2.25.1)
 Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /usr/local/lib/python3.8/dist-packages (from requests[socks]-&gt;snscrape) (4.0.0)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests[socks]-&gt;snscrape) (1.24.3)
 Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.8/dist-packages (from requests[socks]-&gt;snscrape) (2.10)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests[socks]-&gt;snscrape) (2022.12.7)
 Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/python3.8/dist-packages (from requests[socks]-&gt;snscrape) (1.7.1)
 </pre></div>
 </div>
@@ -496,7 +496,7 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-1d182e22-2640-4bea-a9ce-c7e9510f5b37">
+  <div id="df-aaca1959-faa9-4eaf-aa96-a2e5a5af767e">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -604,7 +604,7 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </table>
 <p>500 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-1d182e22-2640-4bea-a9ce-c7e9510f5b37')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-aaca1959-faa9-4eaf-aa96-a2e5a5af767e')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -655,12 +655,12 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 
       <script>
         const buttonEl =
-          document.querySelector('#df-1d182e22-2640-4bea-a9ce-c7e9510f5b37 button.colab-df-convert');
+          document.querySelector('#df-aaca1959-faa9-4eaf-aa96-a2e5a5af767e button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-1d182e22-2640-4bea-a9ce-c7e9510f5b37');
+          const element = document.querySelector('#df-aaca1959-faa9-4eaf-aa96-a2e5a5af767e');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -707,133 +707,100 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">scrape_detik</span><span class="p">(</span><span class="n">hal</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pta_list</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">scrape_pta</span><span class="p">(</span><span class="n">hal</span><span class="p">):</span>
     <span class="k">global</span> <span class="n">hades</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">hal</span><span class="p">):</span>
-        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://pta.trunojoyo.ac.id/&amp;sortby=time&amp;page=</span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://pta.trunojoyo.ac.id/c_search/byprod/10/</span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s1">&#39;</span>
         <span class="n">ge</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">hades</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
         <span class="n">sop</span> <span class="o">=</span> <span class="n">bs</span><span class="p">(</span><span class="n">ge</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
-        <span class="n">li</span> <span class="o">=</span> <span class="n">sop</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">li</span><span class="p">:</span>
-            <span class="n">link</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
-            <span class="n">headline</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-            <span class="n">ge_</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">,</span><span class="n">hades</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-            <span class="n">sop_</span> <span class="o">=</span> <span class="n">bs</span><span class="p">(</span><span class="n">ge_</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
-            <span class="n">content</span> <span class="o">=</span> <span class="n">sop_</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;detail__body-text itp_bodycontent&#39;</span><span class="p">)</span>
-            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
-                <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
-                <span class="n">y</span>  <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span> <span class="p">]</span>
-                <span class="n">content_</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ADVERTISEMENT&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;SCROLL TO RESUME CONTENT&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;done[</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">] &gt; </span><span class="si">{</span><span class="n">headline</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-                <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
-                <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;berita.csv&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-                    <span class="n">wr</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scrape_detik</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="tugas-3-crawling-judul-isi-berita">
-<h1><strong>TUGAS 3 -&gt; Crawling Judul &amp; Isi Berita</strong><a class="headerlink" href="#tugas-3-crawling-judul-isi-berita" title="Permalink to this headline">#</a></h1>
-<ol class="simple">
-<li><p><strong>Mengambil Judul &amp; Isi Berita Online</strong></p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">req</span>
-<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span> <span class="k">as</span> <span class="n">bs</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-<span class="kn">import</span> <span class="nn">csv</span>
-<span class="n">hades</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;user-agent&#39;</span><span class="p">:</span> <span class="s1">&#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36&#39;</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">scrape_detik</span><span class="p">(</span><span class="n">hal</span><span class="p">):</span>
-    <span class="k">global</span> <span class="n">hades</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">hal</span><span class="p">):</span>
-        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://www.detik.com/search/searchnews?query=pemilu+2024&amp;sortby=time&amp;page=</span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s1">&#39;</span>
-        <span class="n">ge</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">hades</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-        <span class="n">sop</span> <span class="o">=</span> <span class="n">bs</span><span class="p">(</span><span class="n">ge</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
-        <span class="n">li</span> <span class="o">=</span> <span class="n">sop</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;list media_rows list-berita&#39;</span><span class="p">)</span>
-        <span class="n">lin</span> <span class="o">=</span> <span class="n">li</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;article&#39;</span><span class="p">)</span>
+        <span class="n">lii</span> <span class="o">=</span> <span class="n">sop</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;items list_style&#39;</span><span class="p">)</span> 
+        <span class="n">lin</span> <span class="o">=</span> <span class="n">lii</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lin</span><span class="p">:</span>
-            <span class="n">link</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
-            <span class="n">headline</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+            <span class="n">link</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s1">&#39;gray button&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
+            <span class="c1"># date = x.find(&#39;a&#39;).find(&#39;span&#39;,class_=&#39;date&#39;).text.replace(&#39;WIB&#39;,&#39;&#39;).replace(&#39;detikNews&#39;,&#39;&#39;).split(&#39;,&#39;)[1]</span>
+            <span class="n">headline</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;title&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="n">penulis</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Penulis :&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
             <span class="n">ge_</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">,</span><span class="n">hades</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
             <span class="n">sop_</span> <span class="o">=</span> <span class="n">bs</span><span class="p">(</span><span class="n">ge_</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
-            <span class="n">content</span> <span class="o">=</span> <span class="n">sop_</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;detail__body-text itp_bodycontent&#39;</span><span class="p">)</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="n">sop_</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;items list_style&#39;</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
-                <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
-                <span class="n">y</span>  <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span> <span class="p">]</span>
-                <span class="n">content_</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ADVERTISEMENT&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;SCROLL TO RESUME CONTENT&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;done[</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">] &gt; </span><span class="si">{</span><span class="n">headline</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="n">content_</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;done[</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">] &gt; </span><span class="si">{</span><span class="n">headline</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
                 <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
-                <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;berita.csv&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-                    <span class="n">wr</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
-                    <span class="n">wr</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="n">headline</span><span class="p">,</span><span class="n">content_</span><span class="p">])</span>
+                
+                <span class="n">pta_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">headline</span><span class="p">,</span><span class="n">penulis</span><span class="p">,</span><span class="n">content_</span><span class="p">,</span><span class="n">link</span><span class="p">])</span>
+                    
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scrape_detik</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scrape_pta</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[1] &gt; Gus Muhaimin Ingin Kebudayaan Jadi Panglima Pemban
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[1] &gt; PERANCANGAN DAN IMPLEMENTASI SISTEM DATABASE TERDISTRIBUSI MENGGUNAKAN ORACLE STUDI KASUS SIAKAD UNI
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[2] &gt; Sudirman Said soal Anies Merosot di Survei Kompas:
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[2] &gt; APLIKASI KONTROL DAN MONITORING JARINGAN KOMPUTER BERBASIS MOBILE
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[3] &gt; Jabar Hari Ini: Hukuman Lebih Berat untuk Doni Sal
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[3] &gt; RANCANG BANGUN APLIKASI PROXY SERVER UNTUKENKRIPSI KODE HTML MENGGUNAKANALGORITMA BLOWFISH
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[4] &gt; Sudirman Said: Anies Perlu Waktu dan Ketenangan un
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[4] &gt; SISTEM PENDUKUNG KEPUTUSAN OPTIMASI PENJADWALAN MATAKULIAH UNTUK PENGGUNAAN RUANGAN KULIAH BERSAMA D
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[5] &gt; Partai Gelora Pede Jabar Jadi Lumbung Suara di Pem
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[5] &gt; SISTEM AUGMENTED REALITY ANIMASI BENDA BERGERAK MENGGUNAKAN FLARTOOLKIT
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[6] &gt; Anies Dukung Sistem Pemilu Terbuka: Lebih Baik unt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[6] &gt; Gerak Pekerja Pada Game Real Time Strategy Menggunakan Finite State Machine
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[7] &gt; Ketua DPP Golkar Tolak Sistem Coblos Partai: Bikin
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[7] &gt; RANCANG BANGUN GAME PERAWATAN SAPI KARAPAN MENGGUNAKAN METODE FUZZY LOGIC
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[8] &gt; Bupati Kendal Dico Temui Gibran di Solo, Kaget soa
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[8] &gt; EKSTRAKSI FITUR BERBASIS TWO DIMENSIONAL LINEAR DISCRIMINANT ANALYSIS  UNTUK PENGENALAN WAJAH
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[9] &gt; Projo Beri Selamat JoMan Dukung Prabowo di Pilpres
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[9] &gt; IMPLEMENTASI  ALGORITMA PRIM  DAN DEPTH FIRST SEARCH PADA PEMBUATAN MAZE GAME BERBASIS ANDROID OS MO
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[10] &gt; Demokrat: Kasihan Koalisi Lain, Nama Capresnya Bel
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[10] &gt; Perancangan Sistem Informasi Badan Kepegawaian Daerah ( BKD ) Bangkalan Sebagai Sub sistem dari E-Go
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[11] &gt; Pastikan Pemilih Meninggal, Petugas Pantarlih Luwu
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[11] &gt; PEMANFAATAN TOGAF ADM UNTUK PERANCANGAN SISTEM INFORMASI DINAS PERINDUSTRIAN &amp; PERDAGANGAN SEBAGAI S
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[12] &gt; Duet Anies-Sandi Mencuat di Survei Voxpol, PKS: Si
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[12] &gt; APLIKASI METODE FUZZY ANALYTIC NETWORK PROCESS (FANP) UNTUK MENDUKUNG KEPUTUSAN PROSES PROMOSI JABAT
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[13] &gt; Relawan Jokowi Akan Gelar Musra Lagi di 11 Provins
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[13] &gt; SISTEM PENDUKUNG KEPUTUSAN REKOMENDASI MENU DIET BAGI PASIEN RAWAT INAP MENGGUNAKAN METODE HARRIS BE
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[14] &gt; Besok, PKS Deklarasi Resmi Anies Baswedan Capres 2
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[14] &gt; RANCANG BANGUN APLIKASI PEMILIHAN TEKNIK REKAYASA KEBUTUHAN MENGGUNAKAN METODE SELF ORGANIZING MAP B
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[15] &gt; DETEKSI COREPOINT SIDIK JARI MENGGUNAKAN METODE GEOMETRY OF REGION TECHNIQUE (GR)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[16] &gt; SISTEM PENENTUAN STATUS GIZI PASIEN RAWAT INAPMENGGUNAKAN METODE NAÃVE BAYES CLASSIFIER(STUDI KASUS
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[17] &gt; PENGENALAN TULISAN TANGAN HURUF ALFABETDENGAN METODE MODIFIED DIRECTION FEATURE (MDF)DAN LEARNING VE
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[18] &gt; PENGENALAN POLA SENYUMAN BERBASIS EKSTRAKSI FITUR PRINCIPAL COMPONENT ANALYSIS (PCA) DAN LINIER DESC
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">TypeError</span>Traceback (most recent call last)
@@ -847,15 +814,15 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 <span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
 
 <span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">6</span><span class="n">c5b84963e2e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">scrape_detik</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">66</span><span class="n">ce8c5c5e77</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">scrape_pta</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 
-<span class="nn">&lt;ipython-input-11-2c127a253e10&gt;</span> in <span class="ni">scrape_detik</span><span class="nt">(hal)</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span>             <span class="n">link</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span>             <span class="n">headline</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-<span class="ne">---&gt; </span><span class="mi">13</span>             <span class="n">ge_</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">,</span><span class="n">hades</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span>             <span class="n">sop_</span> <span class="o">=</span> <span class="n">bs</span><span class="p">(</span><span class="n">ge_</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">15</span>             <span class="n">content</span> <span class="o">=</span> <span class="n">sop_</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;detail__body-text itp_bodycontent&#39;</span><span class="p">)</span>
+<span class="nn">&lt;ipython-input-9-fc2a1729471e&gt;</span> in <span class="ni">scrape_pta</span><span class="nt">(hal)</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>             <span class="n">headline</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;title&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>             <span class="n">penulis</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Penulis :&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">15</span>             <span class="n">ge_</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">,</span><span class="n">hades</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span>             <span class="n">sop_</span> <span class="o">=</span> <span class="n">bs</span><span class="p">(</span><span class="n">ge_</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span>             <span class="n">content</span> <span class="o">=</span> <span class="n">sop_</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;items list_style&#39;</span><span class="p">)</span>
 
 <span class="nn">/usr/local/lib/python3.8/dist-packages/requests/api.py</span> in <span class="ni">get</span><span class="nt">(url, params, **kwargs)</span>
 <span class="g g-Whitespace">     </span><span class="mi">74</span> 
@@ -955,11 +922,808 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;berita.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">pta_list</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Judul&#39;</span><span class="p">,</span><span class="s1">&#39;Penulis&#39;</span><span class="p">,</span><span class="s1">&#39;Isi&#39;</span><span class="p">,</span><span class="s1">&#39;Link&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">4</span>
+<span class="n">list_</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">list_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">list_</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">list_</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pta</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;pta.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_p</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;pta.csv&#39;</span><span class="p">)</span>
+
+<span class="n">data_p</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-a1713486-2132-41b1-8cda-b5779e447096">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Judul</th>
+      <th>Penulis</th>
+      <th>Isi</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>PERANCANGAN DAN IMPLEMENTASI SISTEM DATABASE T...</td>
+      <td>A.Ubaidillah S.Kom</td>
+      <td>Sistem  informasi  akademik  (SIAKAD) merupaka...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/040...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>APLIKASI KONTROL DAN MONITORING JARINGAN KOMPU...</td>
+      <td>M. Basith Ardianto,</td>
+      <td>Berjalannya koneksi jaringan komputer dengan l...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/040...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>RANCANG BANGUN APLIKASI PROXY SERVER UNTUKENKR...</td>
+      <td>Akhmad Suyandi, S.Kom</td>
+      <td>Web server adalah sebuah perangkat lunak serve...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/040...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SISTEM PENDUKUNG KEPUTUSAN OPTIMASI PENJADWALA...</td>
+      <td>Heri Supriyanto</td>
+      <td>Penjadwalan  kuliah  di  Perguruan  Tinggi  me...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SISTEM AUGMENTED REALITY ANIMASI BENDA BERGERA...</td>
+      <td>Septian Rahman Hakim</td>
+      <td>Seiring perkembangan teknologi yang ada diduni...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Gerak Pekerja Pada Game Real Time Strategy Men...</td>
+      <td>Adi Chandra Laksono</td>
+      <td>Gerak pekerja ada pada game yang memiliki genr...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>RANCANG BANGUN GAME PERAWATAN SAPI KARAPAN MEN...</td>
+      <td>NURRACHMAT</td>
+      <td>Perkembangan game yang semakin pesat, memberik...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>EKSTRAKSI FITUR BERBASIS TWO DIMENSIONAL LINEA...</td>
+      <td>Muhammad Choirur Rozi</td>
+      <td>Sistem pengenalan wajah adalah suatu sistem un...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>IMPLEMENTASI  ALGORITMA PRIM  DAN DEPTH FIRST ...</td>
+      <td>M Khoiril Anwar</td>
+      <td>Teknologi mobile game beroperating system open...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Perancangan Sistem Informasi Badan Kepegawaian...</td>
+      <td>MALIKUL HAMZAH</td>
+      <td>Kantor Badan Kepegawaian kota Bangkalan adalah...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>PEMANFAATAN TOGAF ADM UNTUK PERANCANGAN SISTEM...</td>
+      <td>Norman</td>
+      <td>Penyusunan Sistem Informasi Dinas Perindustria...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>APLIKASI METODE FUZZY ANALYTIC NETWORK PROCESS...</td>
+      <td>Robiatul Adawiyah, S.Kom</td>
+      <td>Perusahaan pemerintah maupun swasta mempunyai ...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>SISTEM PENDUKUNG KEPUTUSAN REKOMENDASI MENU DI...</td>
+      <td>Desy Mariana S. Kom</td>
+      <td>Pelayanan makanan bagi pasien rawat inap di Ru...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>RANCANG BANGUN APLIKASI PEMILIHAN TEKNIK REKAY...</td>
+      <td>Lia Fransiska</td>
+      <td>Penyusunan Sistem Pendukung Keputusan pemiliha...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>DETEKSI COREPOINT SIDIK JARI MENGGUNAKAN METOD...</td>
+      <td>Erwina Safitri</td>
+      <td>Sidik jari adalah salah satu karakteristik fis...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>SISTEM PENENTUAN STATUS GIZI PASIEN RAWAT INAP...</td>
+      <td>Nur Anggraeni</td>
+      <td>Di Indonesia masalah perkembangan gizi adalah ...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>PENGENALAN TULISAN TANGAN HURUF ALFABETDENGAN ...</td>
+      <td>Hilyati Safitri</td>
+      <td>Pengenalan tulisan tangan merupakan topik pene...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>PENGENALAN POLA SENYUMAN BERBASIS EKSTRAKSI FI...</td>
+      <td>SITI KHOLILAH</td>
+      <td>Citra senyum merupakan salah satu fitur biomet...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>SISTEM PEROLEHAN CITRA BERBASIS ISI MENGGUNAKA...</td>
+      <td>Nansy Lovitasari</td>
+      <td>Batik adalah kerajinan yang memiliki nilai sen...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>ONTOLOGY SEMANTIC WEB UNTUK PENCARIAN TUGAS AK...</td>
+      <td>Daniyar Bagus Prasetya</td>
+      <td>Kebutuhan pencarian data pada internet yang ce...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>RANCANG BANGUN APLIKASI INTRUSION PREVENTION S...</td>
+      <td>BAHRUL ULUM</td>
+      <td>Dalam setiap perusahaan tentunya memiliki data...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>APLIKASI CITRA MOSAIK PANORAMIK MENGGUNAKAN ME...</td>
+      <td>Sri Rahma Puspa Sari</td>
+      <td>Citra digital banyak dimanfaatkan dalam berbag...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/060...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>ANALISA VALIDITAS PENERIMA BEASISWA MENGGUNAKA...</td>
+      <td>Hilmi Fairuz Abadi</td>
+      <td>Beasiswa adalah pemberian berupa bantuan keuan...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/060...</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>SISTEM PERAMALAN PENJUALAN JANGKA PENDEK SPARE...</td>
+      <td>Ana Qaimah L.M.D.R</td>
+      <td>Spare part merupakan salah satu bagian penting...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>PENGEMBANGAN MESIN PENCARIAN ANTIPLAGIASI PADA...</td>
+      <td>ilham wibisono aziz</td>
+      <td>ABSTRAK\r\nPenjiplakan merupakan masalah yang ...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/060...</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>SISTEM PENDUKUNG KEPUTUSAN PEMILIHAN KARYAWAN ...</td>
+      <td>Catur Ngesti Waluyo</td>
+      <td>Sumber daya manusia mutlak dibutuhkan untuk ke...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>PENGELOMPOKAN KUALITAS KELAS PADA SISWA MENGGU...</td>
+      <td>Hamiyah</td>
+      <td>ABSTRAK\r\nData yang terdapat pada SMA Wachid ...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>APLIKASI CITRA MOSAIC PANORAMIC MENGGUNAKAN ME...</td>
+      <td>Gendra Budiarti</td>
+      <td>Sebuah citra banyak diterapkan dalam berbagai ...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/060...</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>PENGENALAN TELAPAK TANGAN MENGGUNAKAN METODE N...</td>
+      <td>Daril Ulumiyah</td>
+      <td>Teknologi biometrik saat ini mengalami perkemb...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Implementasi Sistem Pakar Pada Pengambilan Kep...</td>
+      <td>Rizky Maulidya</td>
+      <td>Diagnosa penyakit mata dengan sistem informasi...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>RANCANG BANGUN MANAJEMEN PEMBELAJARAN DAN TES ...</td>
+      <td>Susanto</td>
+      <td>Penggunaan teknologi mobile saat ini sangat ma...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/060...</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Aplikasi Penilaian Kinerja dengan Metodologi C...</td>
+      <td>Luthfi Zahro</td>
+      <td>Setiap perusahaan mengharapkan adanya hubungan...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Kalibrasi Kamera dengan Menggunakan Metode Tsai</td>
+      <td>Bima Iffan Hakim</td>
+      <td>Teknik kalibrasi sangat berpengaruh terhadap p...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/050...</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>PENERAPAN METODE ANALYTICAL HIERARCHY PROCESS ...</td>
+      <td>Helyatin</td>
+      <td>Pemilihan  supplier merupakan salah satu isu p...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Model Penjualan Produk Unggulan Batik Khas Pam...</td>
+      <td>Murni Rotifah</td>
+      <td>Kabupaten Pamekasan merupakan salah satu pusat...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>APLIKASI DAN DESAIN MODEL DECISION AID PELANGG...</td>
+      <td>Ardiyanto Setiawan</td>
+      <td>Toko Batik Tulis Madura merupakan salah satu t...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Segmentasi Parasit Malaria Dalam Sel Darah Men...</td>
+      <td>Yenni Rahmawati</td>
+      <td>Malaria disebabkan oleh intraseluler parasit b...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>ANALISA DATA ANTARAN POS EXPRESS MENGGUNAKANME...</td>
+      <td>siti murtasiyah warda</td>
+      <td>PT. Pos Indonesia (Persero) merupakan salah sa...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/050...</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Deteksi Manusia Menggunakan Histogram of Orien...</td>
+      <td>R.A. Uluwiyah Nur Oktavianis</td>
+      <td>Deteksi manusia merupakan  suatu aplikasi yang...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>KLASIFIKASI STATUS GIZI BALITA MENGGUNAKAN KOH...</td>
+      <td>Uhty Zunairoh</td>
+      <td>Aplikasi klasifikasi status gizi balita ini di...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>PERANCANGAN SISTEM INFORMASI PERENCANAAN PRODU...</td>
+      <td>M. Arif Rahman</td>
+      <td>Penelitian ini membahas tentang perancangan si...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>ANALISIS PERAMALAN PENJUALAN PRODUK ASESORIS K...</td>
+      <td>Moh. Hasbi Ash Shiddieqy</td>
+      <td>Dengan prediksi yang baik, dapat dibuat rencan...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>SISTEM INFORMASI GEOGRAFIS PEMETAAN WILAYAH BE...</td>
+      <td>Hendriatno</td>
+      <td>Menurut pemetaan yang dilakukan oleh Tim Nasio...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/050...</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>PENERAPAN METODE RADIAL BASIS FUNCTION NETWORK...</td>
+      <td>Dwi Nuzulul Heriyanto</td>
+      <td>Berawal dari permintaan akan Straw (sperma bek...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/080...</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>AUTO LEVELING BERBASIS FINITE STATE MACHINE (F...</td>
+      <td>Syafrial Nur Maulana</td>
+      <td>Pengetahuan tentang bahasa Inggris pada jaman ...</td>
+      <td>https://pta.trunojoyo.ac.id/welcome/detail/070...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a1713486-2132-41b1-8cda-b5779e447096')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-a1713486-2132-41b1-8cda-b5779e447096 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-a1713486-2132-41b1-8cda-b5779e447096');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="tugas-3-crawling-judul-isi-berita">
+<h1><strong>TUGAS 3 -&gt; Crawling Judul &amp; Isi Berita</strong><a class="headerlink" href="#tugas-3-crawling-judul-isi-berita" title="Permalink to this headline">#</a></h1>
+<ol class="simple">
+<li><p><strong>Mengambil Judul &amp; Isi Berita Online</strong></p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">req</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span> <span class="k">as</span> <span class="n">bs</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="n">hades</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;user-agent&#39;</span><span class="p">:</span> <span class="s1">&#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">berita_list</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">scrape_detik</span><span class="p">(</span><span class="n">hal</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">hades</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">hal</span><span class="p">):</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://www.detik.com/search/searchnews?query=pemilu+2024&amp;sortby=time&amp;page=</span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="n">ge</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">hades</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">sop</span> <span class="o">=</span> <span class="n">bs</span><span class="p">(</span><span class="n">ge</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+        <span class="n">li</span> <span class="o">=</span> <span class="n">sop</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;list media_rows list-berita&#39;</span><span class="p">)</span>
+        <span class="n">lin</span> <span class="o">=</span> <span class="n">li</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;article&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lin</span><span class="p">:</span>
+            <span class="n">link</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
+            <span class="n">date</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;WIB&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;detikNews&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">headline</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+            <span class="n">ge_</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">,</span><span class="n">hades</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+            <span class="n">sop_</span> <span class="o">=</span> <span class="n">bs</span><span class="p">(</span><span class="n">ge_</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="n">sop_</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;detail__body-text itp_bodycontent&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
+                <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
+                <span class="n">y</span>  <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span> <span class="p">]</span>
+                <span class="n">content_</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ADVERTISEMENT&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;SCROLL TO RESUME CONTENT&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;done[</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">] &gt; </span><span class="si">{</span><span class="n">headline</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">berita_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">headline</span><span class="p">,</span><span class="n">date</span><span class="p">,</span><span class="n">link</span><span class="p">,</span><span class="n">content_</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scrape_detik</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>done[1] &gt; Gus Muhaimin Ingin Kebudayaan Jadi Panglima Pembangunan Bangsa
+done[2] &gt; Sudirman Said soal Anies Merosot di Survei Kompas: Belum Kampanye Resmi
+done[3] &gt; Jabar Hari Ini: Hukuman Lebih Berat untuk Doni Salmanan
+done[4] &gt; Sudirman Said: Anies Perlu Waktu dan Ketenangan untuk Tentukan Cawapres
+done[5] &gt; Partai Gelora Pede Jabar Jadi Lumbung Suara di Pemilu 2024
+done[6] &gt; Anies Dukung Sistem Pemilu Terbuka: Lebih Baik untuk Demokrasi
+done[7] &gt; Ketua DPP Golkar Tolak Sistem Coblos Partai: Bikin Lupa Turba ke Rakyat
+done[8] &gt; Bupati Kendal Dico Temui Gibran di Solo, Kaget soal Survei Pilgub Jateng
+done[9] &gt; Projo Beri Selamat JoMan Dukung Prabowo di Pilpres 2024, Bakal Nyusul?
+done[10] &gt; Demokrat: Kasihan Koalisi Lain, Nama Capresnya Belum Ada
+done[11] &gt; Pastikan Pemilih Meninggal, Petugas Pantarlih Luwu Cek Langsung ke Kuburan
+done[12] &gt; Duet Anies-Sandi Mencuat di Survei Voxpol, PKS: Siapa Saja Berpeluang
+done[13] &gt; Relawan Jokowi Akan Gelar Musra Lagi di 11 Provinsi, Terakhir di Jakarta
+done[14] &gt; Besok, PKS Deklarasi Resmi Anies Baswedan Capres 2024!
+done[15] &gt; Paloh Cerita Kunjungi PKS Sebelum Berkoalisi, Ungkit Rangkulan Persahabatan
+done[16] &gt; Elektabilitas NasDem Melesat Naik, Surya Paloh: Kami Terbiasa Rendah
+done[17] &gt; Cak Imin Beber Alasan Koalisi Gerindra-PKB Belum Umumkan Capres-Cawapres
+done[18] &gt; Ganjar Unggul Versi Litbang Kompas, PDIP Tetap Tunggu Arahan Megawati
+done[19] &gt; Kelakar Surya Paloh soal Cawapres Anies: Jangankan AHY, Saya Juga Cocok
+done[20] &gt; Cak Imin Buka Suara soal Potensi Duet dengan Anies di Pilpres 2024
+done[21] &gt; Banyak Proyek Hunian Mangkrak, Industri Properti Belum Sembuh dari Pandemi?
+done[22] &gt; AHY Dampingi Anies? Paloh: Potongan Ganteng, Lebih dari Pantas
+done[23] &gt; Bamsoet: Toleransi dalam Beragama Tak Boleh Hanya Bersifat Retorika
+done[24] &gt; Surya Paloh: Sikap Pemerintah Jelas Dukung Sistem Pemilu Terbuka
+done[25] &gt; TGB Dukung Gibran Maju Gubernur: Sunatullah...
+done[26] &gt; Respons Santai Cak Imin soal Gus Yahya Sebut Warga NU Tak Haram Pilih PAN
+done[27] &gt; Kabar Terkini Bocah Kembar Prabowo-Sandiaga yang Sempat Bikin Heboh
+done[28] &gt; AHY di Depan Paloh: Semoga Koalisi Perubahan Bisa Berlayar dan Menang
+done[29] &gt; AHY: Demokrat dan NasDem Terdepan Tolak Pemilu Coblos Partai!
+done[30] &gt; Gerindra soal Survei Litbang Kompas: Kami Semangat Tren Prabowo Stabil
+done[31] &gt; Gibran soal Kriteria Cagub Jateng PDIP Versi Bambang Pacul: Bukan Saya
+done[32] &gt; Anies Merosot di Survei Litbang Kompas, NasDem Yakin Pendukung Tak Jadi Sampel
+done[33] &gt; Bambang Pacul Beber Kriteria Cagub Jateng Pengganti Ganjar, Gibran: Bukan Saya
+done[34] &gt; AHY Suguhkan Masakan Spesial Favorit Paloh di Markas Demokrat, Apa Itu?
+done[35] &gt; Cegah Pencurian Data Pemilih, Bawaslu dan BSSN Bentuk Tim Keamanan Siber
+done[36] &gt; Survei Litbang Kompas Capres 2024: Ganjar Ungguli Prabowo dan Anies
+done[37] &gt; Dipayungi AHY, Surya Paloh Tiba di Markas Demokrat Matangkan Koalisi
+done[38] &gt; Survei Litbang Kompas: Ridwan Kamil Dominan di Figur Capres Alternatif
+done[39] &gt; Survei Litbang Kompas: Ganjar 25,3%, Prabowo 18,1%, Anies 13,1%
+done[40] &gt; Bawaslu Dorong Ada Penerjemah bagi Disabilitas Setiap Kampanye
+done[41] &gt; Jubir Partai Ummat Bicara Prabowo Sebagai &#39;Cadangan&#39; Anies
+done[42] &gt; PD dan PKS Tak Iri Meski Elektabilitas NasDem Melesat Berkat Anies
+done[43] &gt; Klaim Brand Anies Dekat PKS, NasDem: Nggak Penting!
+done[44] &gt; Pileg 2024, PKB Bidik 14 Kursi DPRD Kabupaten Bandung
+done[45] &gt; Ternyata Tak Rahasia-rahasia Amat Kunjungan Biden ke Ukraina
+done[46] &gt; Komitmen Gelora Jabar Jadikan Anis Matta-Fahri Hamzah Pemimpin Indonesia
+done[47] &gt; Mangku Pastika-Gede Suardana Tampil &#39;Mesra&#39; dalam Diskusi Kebangsaan
+done[48] &gt; Andre Rosiade Tegaskan Polarisasi Tak Diperlukan: Solusinya Prabowo Presiden
+done[49] &gt; Petugas Pantarlih Lumajang Coklit Data Pemilih 2024 Sambil Jualan Pentol
+done[50] &gt; Gus Yahya Tak Haramkan Warga NU Coblos PAN, PKB Jatim: Cambuk Buat Kami
+done[51] &gt; Suara NU Jadi Rebutan di Pemilu 2024, Pengamat: Mayoritas Masih Pilih PKB
+done[52] &gt; Pemprov Setop Pengadaan Mobil Listrik untuk Pejabat DKI di 2024
+done[53] &gt; PKS Rakernas Akhir Pekan Ini, Gelar Deklarasi Resmi Anies Capres?
+done[54] &gt; PDIP Ungkap 3 Kriteria Pengganti Ganjar di Pilgub Jateng 2024
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">berita</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">berita_list</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Judul&#39;</span><span class="p">,</span><span class="s1">&#39;Tanggal&#39;</span><span class="p">,</span><span class="s1">&#39;Link&#39;</span><span class="p">,</span><span class="s1">&#39;Isi&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">4</span>
+<span class="n">list_</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">list_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">list_</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">list_</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">berita</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;berita.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_b</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;berita.csv&#39;</span><span class="p">)</span>
+
+<span class="n">data_b</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-c01c318d-7d2a-4fa9-afff-8a7ef7036c39">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Judul</th>
+      <th>Tanggal</th>
+      <th>Link</th>
+      <th>Isi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Gus Muhaimin Ingin Kebudayaan Jadi Panglima Pe...</td>
+      <td>22 Feb 2023 23:16</td>
+      <td>https://www.detik.com/jatim/budaya/d-6583849/g...</td>
+      <td>Ketua Umum Partai Kebangkitan Bangsa (PKB) Abd...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Sudirman Said soal Anies Merosot di Survei Kom...</td>
+      <td>22 Feb 2023 22:09</td>
+      <td>https://news.detik.com/pemilu/d-6583795/sudirm...</td>
+      <td>Elektabilitas Anies Baswedan berada di bawah G...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Jabar Hari Ini: Hukuman Lebih Berat untuk Doni...</td>
+      <td>22 Feb 2023 22:00</td>
+      <td>https://www.detik.com/jabar/berita/d-6583730/j...</td>
+      <td>Ragam peristiwa terjadi di Jabar hari ini, Rab...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Sudirman Said: Anies Perlu Waktu dan Ketenanga...</td>
+      <td>22 Feb 2023 21:06</td>
+      <td>https://news.detik.com/pemilu/d-6583747/sudirm...</td>
+      <td>Juru Bicara Anies Baswedan, Sudirman Said berb...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Partai Gelora Pede Jabar Jadi Lumbung Suara di...</td>
+      <td>22 Feb 2023 20:19</td>
+      <td>https://www.detik.com/jabar/berita/d-6583669/p...</td>
+      <td>Partai Gelora Indonesia optimistis Jawa Barat ...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>Gus Yahya Tak Haramkan Warga NU Coblos PAN, PK...</td>
+      <td>21 Feb 2023 19:57</td>
+      <td>https://www.detik.com/jatim/berita/d-6581549/g...</td>
+      <td>Ketua Umum PBNU KH Yahya Cholil Staquf (Gus Ya...</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>Suara NU Jadi Rebutan di Pemilu 2024, Pengamat...</td>
+      <td>21 Feb 2023 18:57</td>
+      <td>https://www.detik.com/jatim/berita/d-6581441/s...</td>
+      <td>Ketua Umum PBNU KH Yahya Cholil Staquf tidak m...</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>Pemprov Setop Pengadaan Mobil Listrik untuk Pe...</td>
+      <td>21 Feb 2023 18:15</td>
+      <td>https://news.detik.com/berita/d-6581325/pempro...</td>
+      <td>Pemprov DKI tahun ini akan membeli 21 unit mob...</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>PKS Rakernas Akhir Pekan Ini, Gelar Deklarasi ...</td>
+      <td>21 Feb 2023 17:46</td>
+      <td>https://news.detik.com/pemilu/d-6581271/pks-ra...</td>
+      <td>PKS akan menggelar rapat kerja nasional (raker...</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>PDIP Ungkap 3 Kriteria Pengganti Ganjar di Pil...</td>
+      <td>21 Feb 2023 17:35</td>
+      <td>https://news.detik.com/pemilu/d-6581241/pdip-u...</td>
+      <td>Ketua DPD PDI Perjuangan (PDIP) Jawa Tengah, B...</td>
+    </tr>
+  </tbody>
+</table>
+<p>116 rows × 4 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c01c318d-7d2a-4fa9-afff-8a7ef7036c39')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-c01c318d-7d2a-4fa9-afff-8a7ef7036c39 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-c01c318d-7d2a-4fa9-afff-8a7ef7036c39');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
 </div>
 </div>
 
