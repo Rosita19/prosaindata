@@ -209,6 +209,37 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/Rosita19/prosaindata/blob/gh-pages/_sources/prosaindata.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -217,7 +248,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/Rosita19/prosaindata" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -234,7 +265,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fprosaindata.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Rosita19/prosaindata/issues/new?title=Issue%20on%20page%20%2Fprosaindata.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -461,12 +492,12 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Collecting snscrape
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading snscrape-0.6.2.20230320-py3-none-any.whl (71 kB)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting snscrape
+  Downloading snscrape-0.6.2.20230320-py3-none-any.whl (71 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/71.8 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">71.8/71.8 kB</span> <span class=" -Color -Color-Red">3.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">71.8/71.8 kB</span> <span class=" -Color -Color-Red">4.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25hRequirement already satisfied: requests[socks] in /usr/local/lib/python3.10/dist-packages (from snscrape) (2.27.1)
 Requirement already satisfied: lxml in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.9.2)
 Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.11.2)
@@ -480,7 +511,9 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: snscrape
-Successfully installed snscrape-0.6.2.20230320
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed snscrape-0.6.2.20230320
 </pre></div>
 </div>
 </div>
@@ -594,7 +627,7 @@ Successfully installed snscrape-0.6.2.20230320
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-21821b8c-887a-49d0-8b90-122508dcc383">
+  <div id="df-a168b90b-68a0-4808-bce2-277d096d631c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -702,7 +735,7 @@ Successfully installed snscrape-0.6.2.20230320
 </table>
 <p>500 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-21821b8c-887a-49d0-8b90-122508dcc383')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a168b90b-68a0-4808-bce2-277d096d631c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -753,12 +786,12 @@ Successfully installed snscrape-0.6.2.20230320
 
       <script>
         const buttonEl =
-          document.querySelector('#df-21821b8c-887a-49d0-8b90-122508dcc383 button.colab-df-convert');
+          document.querySelector('#df-a168b90b-68a0-4808-bce2-277d096d631c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-21821b8c-887a-49d0-8b90-122508dcc383');
+          const element = document.querySelector('#df-a168b90b-68a0-4808-bce2-277d096d631c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -929,7 +962,7 @@ done[45] &gt; AUTO LEVELING BERBASIS FINITE STATE MACHINE (FSM) PADA GAME PEMBEL
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-b4278dc2-bdbc-4309-9181-fbed7d873efc">
+  <div id="df-78e91bff-16fb-4dd7-81c2-efda4566ef3e">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1274,7 +1307,7 @@ done[45] &gt; AUTO LEVELING BERBASIS FINITE STATE MACHINE (FSM) PADA GAME PEMBEL
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b4278dc2-bdbc-4309-9181-fbed7d873efc')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-78e91bff-16fb-4dd7-81c2-efda4566ef3e')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1325,12 +1358,12 @@ done[45] &gt; AUTO LEVELING BERBASIS FINITE STATE MACHINE (FSM) PADA GAME PEMBEL
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b4278dc2-bdbc-4309-9181-fbed7d873efc button.colab-df-convert');
+          document.querySelector('#df-78e91bff-16fb-4dd7-81c2-efda4566ef3e button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b4278dc2-bdbc-4309-9181-fbed7d873efc');
+          const element = document.querySelector('#df-78e91bff-16fb-4dd7-81c2-efda4566ef3e');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
